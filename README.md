@@ -1,5 +1,9 @@
+<h1 align="center">Revenant NeuroSpawn</h1>
 
-# REVENANT - NEUROSPAWN
+<p align="center">
+  <img src="coverimage.png" alt="Revenant NeuroSpawn Cover" />
+</p>
+
 ## Reinforcement Learning Approach
 
 This zombie spawner uses a deep reinforcement learning agent to decide how many zombies to spawn at each of five spawn points, based on the current game state. The agent observes a normalized state vector containing player health, position, active zombie count, distances to each spawn point, and time since last spawn. A custom reward function guides the agent to balance challenge and fairness: it penalizes overwhelming the player, encourages spawning at distant points when health is low, and rewards diverse, strategic spawning when the player is strong. The agent is trained in a simulated environment using policy gradient methods with entropy regularization to ensure both effective learning and varied, adaptive gameplay behavior.
